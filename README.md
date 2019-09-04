@@ -11,7 +11,7 @@
 <p>Ativação Virtualenv</p>
 
 <ul>
-<li>.venv /bin/activate</li>
+<li>. pf-venv/bin/activate</li>
 </ul>
 
 <p>Instalação Django</p>
@@ -43,6 +43,9 @@ from django.contrib.auth.decorators import login_required
 
 ```python
 from django.contrib.auth import views as auth_views
+
+path('login/', auth_views.LoginView.as_view(), name='login'),
+path('logout/', auth_views.LogoutView.as_view(), name='logout'),
 ````
 
 <p>projetoFinal/gestao_clientes/gestao_clientes/settings.py</p>
