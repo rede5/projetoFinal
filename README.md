@@ -23,7 +23,7 @@
 <p>Criação do Projeto</p>
 
 <ul>
-<li>django-admim startproject gestao_clientes</li>
+<li>django-admin startproject gestao_clientes</li>
 </ul>
 
 <h2>22. Migração da App Clientes</h2>
