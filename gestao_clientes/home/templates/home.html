@@ -13,8 +13,11 @@
          </div>
          <div class="col-sm">
              {% if user.is_authenticated %}
-                <p>Olá {{ user.username }}</p>
-                <a href="{% url 'logout' %}">Sair</a>
+                <p>Olá {{ user.username }}
+                   <a href="{% url 'logout' %}">
+                       <span class="badge badge-dark">Sair</span>
+                   </a>
+                </p>
              {% else %}
                 <a href="{% url 'login' %}" class="btn btn-info">Entrar</a>
              {% endif %}
@@ -23,3 +26,13 @@
      </div>
 
 {% endblock %}
+
+{% block footer %}
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Desenvolvimento web com Django 2.x</span>
+      </div>
+    </footer>
+
+{%endblock %}

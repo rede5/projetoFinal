@@ -129,3 +129,7 @@ MEDIA_ROOT = 'media'
 LOGIN_URL = '/login/'
 
 LOGIN_REDIRECT_URL = 'person_list'
+
+STATICFILES_DIRS = [
+    'statics',
+]
